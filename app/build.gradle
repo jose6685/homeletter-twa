@@ -171,7 +171,6 @@ android {
             project.hasProperty('RELEASE_STORE_PASSWORD') &&
             project.hasProperty('RELEASE_KEY_ALIAS') &&
             project.hasProperty('RELEASE_KEY_PASSWORD')
-
     if (hasReleaseSigning) {
         signingConfigs {
             release {
@@ -188,7 +187,6 @@ android {
             minifyEnabled true
         }
     }
-
     if (hasReleaseSigning) {
         buildTypes {
             release {
